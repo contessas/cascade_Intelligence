@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedWave from './AnimatedWave';
 
@@ -13,7 +12,7 @@ const Hero: React.FC = () => {
           From AI exploration to <span className="text-deep-teal">intelligent execution.</span>
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-gray/80 mb-10 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Practical, human-centered AI strategy for organizations ready to move from curiosity to clarity.
+          Cascade Intelligence helps organizations turn AI potential into practical reality. We design clear, ethical, and actionable strategies so leaders can move from curiosity to confident implementation — with systems that think and flow intelligently.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <a href="#" className="w-full sm:w-auto bg-deep-teal text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
