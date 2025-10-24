@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface ServiceCardProps {
@@ -7,7 +6,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => (
-  <div className="bg-white p-8 rounded-lg border border-sky-blue/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+  <div className="bg-white p-8 rounded-lg border border-sky-blue/20 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
     <div className="h-1 w-16 bg-coral mb-4 rounded"></div>
     <h3 className="font-montserrat text-xl font-bold text-deep-teal mb-3">{title}</h3>
     <p className="text-slate-gray/80">{description}</p>
@@ -44,9 +43,16 @@ const Services: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard key={index} title={service.title} description={service.description} />
-          ))}
+          {services.map((service, index) => {
+            if (service.title === "AI Readiness Workshop") {
+              return (
+                <a key={index} href="#/workshop" className="block h-full">
+                  <ServiceCard title={service.title} description={service.description} />
+                </a>
+              );
+            }
+            return <ServiceCard key={index} title={service.title} description={service.description} />;
+          })}
         </div>
       </div>
     </section>

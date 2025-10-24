@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
           Cascade Intelligence helps organizations turn AI potential into practical reality. We design clear, ethical, and actionable strategies so leaders can move from curiosity to confident implementation — with systems that think and flow intelligently.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <a href="#" className="w-full sm:w-auto bg-deep-teal text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
+          <a href="#/workshop" className="w-full sm:w-auto bg-deep-teal text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
             Book a Workshop
           </a>
-          <a href="#" className="w-full sm:w-auto bg-warm-white text-coral font-medium py-3 px-8 rounded-full border border-coral hover:bg-coral hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg">
+          <a href="#approach" className="w-full sm:w-auto bg-warm-white text-coral font-medium py-3 px-8 rounded-full border border-coral hover:bg-coral hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg">
             See Our Approach
           </a>
         </div>

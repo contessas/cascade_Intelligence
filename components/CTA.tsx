@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const CTA: React.FC = () => {
@@ -12,12 +11,12 @@ const CTA: React.FC = () => {
           Let's build your AI roadmap together. Start with a workshop or get in touch to discuss your unique challenges.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="#" className="w-full sm:w-auto bg-coral text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
+          <a href="#/workshop" className="w-full sm:w-auto bg-coral text-white font-medium py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg">
             Book Your Workshop
           </a>
-          <a href="#" className="w-full sm:w-auto bg-transparent text-warm-white font-medium py-3 px-8 rounded-full border border-warm-white hover:bg-warm-white hover:text-deep-teal transform hover:scale-105 transition-all duration-300">
+          <button type="button" className="w-full sm:w-auto bg-transparent text-warm-white font-medium py-3 px-8 rounded-full border border-warm-white hover:bg-warm-white hover:text-deep-teal transform hover:scale-105 transition-all duration-300">
             Contact Cascade Intelligence
-          </a>
+          </button>
         </div>
       </div>
     </section>
